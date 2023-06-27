@@ -1,5 +1,5 @@
 ```js
-client = io('https://ved.ms.med247.co', {
+client = io(origin, {
     transports: ['websocket'],
     path: '/holaa/socket.io',
 })
