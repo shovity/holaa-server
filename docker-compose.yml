@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  holaa:
+    image: holaa
+    build: .
+    ulimits:
+      nofile:
+        soft: 20480
+        hard: 20480
+    networks:
+      - backend
+    logging:
+      options:
+        max-size: 5m
+    environment:
+      - NODE_ENV=production
+        
+networks:
+  backend:
+    name: backend
