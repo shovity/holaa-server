@@ -23,11 +23,20 @@ io.on('connection', (socket) => {
                 socket.emit('message', messages)
                 socket.join(channel)
                 socket.to(channel).emit('message', [{ user, message: 'Has join the channel' }])
+
+                // console.log('user join', { user, channel, messages})
             })
+
     })
 
-    socket.on('message', ({ channel, content }) => {
-        const user = socket.user
+    socket.on('message', ({ content }) => {
+        const { user, channel } = socket
+
+        // console.log('user send message', { user, channel, content })
+
+        if (!user || !channel) {
+            return socket.disconnect()
+        }
 
         socket.to(channel).emit('message', [{ user, content }])
         Message.create({ user, channel, content })
