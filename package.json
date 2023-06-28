@@ -8,7 +8,8 @@
     "dev": "nodemon app",
     "up": "bash bin/up.sh",
     "format": "prettier --write .",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "chat": "holaa holaa-service"
   },
   "dependencies": {
     "eroc": "^2.4.6",

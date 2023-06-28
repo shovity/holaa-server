@@ -22,7 +22,7 @@ io.on('connection', (socket) => {
             .then((messages) => {
                 socket.emit('message', messages)
                 socket.join(channel)
-                socket.to(channel).emit('message', [{ user, message: 'Has join the channel' }])
+                socket.to(channel).emit('message', [{ user, content: 'Has join the channel' }])
 
                 // console.log('user join', { user, channel, messages})
             })
@@ -46,7 +46,7 @@ io.on('connection', (socket) => {
         const { user, channel } = socket
 
         if (channel) {
-            socket.to(channel).emit('message', [{ user, message: 'Has left the channel' }])
+            socket.to(channel).emit('message', [{ user, content: 'Has left the channel' }])
         }
     })
 })
