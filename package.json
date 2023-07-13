@@ -2,10 +2,11 @@
   "name": "holaa",
   "version": "1.0.1",
   "main": "app.js",
+  "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node app",
-    "dev": "nodemon app",
+    "start": "node app --mms=holaa",
+    "dev": "nodemon app --mms=holaa",
     "up": "bash bin/up.sh",
     "format": "prettier --write .",
     "lint": "eslint . --fix",
