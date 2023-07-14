@@ -1272,10 +1272,10 @@ engine.io@~6.2.1:
     engine.io-parser "~5.0.3"
     ws "~8.2.3"
 
-eroc@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/eroc/-/eroc-2.4.6.tgz#2249d2633c8d6722bb892c847dfb1a2e235a8470"
-  integrity sha512-trIhlJAHkk+E2xv7HqWsMYKVJQ4QInoh8g/W3/noJ8bEjmoNhQhgsWffknD+bDL+beohyEw+ov1fKKSx97a6iw==
+eroc@^2.4.9:
+  version "2.4.9"
+  resolved "https://registry.yarnpkg.com/eroc/-/eroc-2.4.9.tgz#a1b24f3ffcfd59c20f83d3547abdf42cfcd5f376"
+  integrity sha512-pD/zJi+H392kW4nc+2foKcdGrEPo7sANyREKmUl064W/xyW+Bao4kvLpCUWE2DzMiejt3nYpkqM0gZVx5TZbqQ==
   dependencies:
     cookie-parser "^1.4.5"
     cors "^2.8.5"
